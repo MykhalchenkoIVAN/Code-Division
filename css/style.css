@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 auto;
+  font-weight: 400;
+}
+body {
+  display: flex;
+  justify-content: center;
+  padding: 2.5% 10%;
+  background-color: #8fbde8;
+  font-family: "Gilroy";
+  font-size: 17px;
+  line-height: 21px;
+  letter-spacing: 0.06em;
+}
+a {
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+}
+a:hover {
+  color: #4461f2;
+}
+button {
+  font-weight: 700;
+  color: #4461f2;
+}
+.display_none {
+  display: none;
+}
+.body_class {
+  position: relative;
+  width: 95%;
+  height: 90vh;
+  background: #f6f6f6;
+  border-radius: 40px;
+}
+.header {
+  width: 80%;
+  height: 43px;
+  margin: 0 auto;
+  top: 5%;
+  position: relative;
+}
+.header_wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_nav {
+  display: flex;
+  justify-content: space-between;
+  width: 494px;
+}
+.header_nav_link {
+  z-index: 10;
+}
+.header_nav_link:hover {
+  color: #000;
+  text-decoration: underline;
+}
+/*nav lng start*/
+
+.header_lng_btn {
+  position: relative;
+  display: flex;
+  color: #000;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+}
+.header_lng_btn img {
+  position: absolute;
+  left: 90.67%;
+  top: 43.74%;
+}
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.header_lng {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.box {
+  height: 100%;
+  width: 100%;
+}
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.header_lng_content {
+  position: absolute;
+}
+/* Ссылки внутри выпадающего списка */
+.header_lng_content a {
+  color: black;
+  padding: 12px 10px;
+  text-decoration: none;
+  display: block;
+}
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.header_lng_content a:hover {
+  color: #4461f2;
+}
+
+/* Показать выпадающее меню при наведении курсора */
+
+/* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
+.box:hover .header_lng_btn {
+  color: #4461f2;
+}
+/*REG BTN START*/
+.header_reg_bnt {
+  padding-left: 38px;
+}
+.wrapper_reg_btn {
+  display: flex;
+  justify-content: space-between;
+  width: 249px;
+  height: 42px;
+}
+/* Green */
+.sing_in_bnt {
+  height: 100%;
+  width: 112px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.sing_in_bnt:hover {
+  background-color: white;
+  border-radius: 21px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Blue */
+.registration_btn {
+  height: 100%;
+  width: 112px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.registration_btn:hover {
+  background-color: white;
+  border-radius: 21px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+/*REG BTN END*/
+/*nav lng end*/
+/*TITLE START*/
+.title {
+  position: absolute;
+  width: 40%;
+  height: 281px;
+  left: 10%;
+  top: 30%;
+  z-index: 2;
+}
+.wrapper_title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header_title {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 28px;
+  font-weight: 300;
+}
+.header_title h1 {
+  position: absolute;
+  line-height: 77px;
+  font-weight: 700;
+  font-style: normal;
+}
+.sub_title {
+  font-size: 23px;
+  line-height: 28px;
+  font-weight: 500;
+  max-width: 310px;
+  height: 63px;
+}
+.sub_title a {
+  color: #4461f2;
+}
+.sub_title a:hover {
+  color: #1e90ff;
+}
+/*TITLE END*/
+/*background filter start*/
+.bg_filter {
+  z-index: 10;
+}
+.bg_filter_one {
+  position: absolute;
+  width: 226px;
+  height: 226px;
+  left: 11%;
+  top: 291px;
+  background: #dda82a;
+  opacity: 0.45;
+  filter: blur(112px);
+}
+.bg_filter_second {
+  position: absolute;
+  width: 226px;
+  height: 226px;
+  left: 36%;
+  top: 557px;
+  background-color: #4461f2;
+  filter: blur(142px);
+}
+/*/*background filter end*/
+
+/*Form start*/
+.container_form {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  height: 555px;
+  width: 400px;
+  background-color: transparent;
+}
+.wrapper_form {
+  width: 100%;
+  height: 100%;
+}
+.form {
+  width: 100%;
+  height: 158px;
+}
+.form input {
+  border: none;
+  border-radius: 10px;
+  width: 400px;
+  height: 77px;
+  margin: 8px 0 9px 0;
+  padding-left: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 77px;
+  letter-spacing: 0.09em;
+  color: #4f555a;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border: none;
+  outline: none;
+}
+input[type="text"]:hover,
+input[type="password"]:hover {
+  border: 1px solid black;
+}
+.buttom_wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 403px;
+}
+.buttom_title {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 25%;
+}
+.buttom_title_wrap {
+  text-align: right;
+  width: 100%;
+}
+.buttom_title_wrap button {
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: #c7c7c7;
+  border: none;
+  background: transparent;
+}
+.buttom_title_wrap button:hover {
+  color: #a9a9a9;
+  font-size: 15px;
+}
+.sing_in_button {
+  width: 100%;
+  height: 25%;
+}
+.sing_in_button button {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  letter-spacing: 0.09em;
+  color: #ffffff;
+  width: 400px;
+  height: 60px;
+  background: #4461f2;
+  box-shadow: 0px 12px 21px 4px rgba(68, 97, 242, 0.15);
+  border-radius: 10px;
+  border: none;
+}
+.sing_in_button button:hover {
+  background: #1e90ff;
+}
+
+.button_reg {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 25%;
+}
+.button_reg button {
+  background: #f6f6f6;
+  border: 1px solid #dddfdd;
+  border-radius: 10px;
+  width: 117px;
+  height: 60px;
+}
+.button_reg button:hover {
+  background: white;
+}
+
+.sub_title_button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 25%;
+}
+.border1 {
+  width: 120px;
+  height: 0px;
+  border: 1px solid #dfdfdf;
+}
+.border2 {
+  width: 120px;
+  height: 0px;
+  border: 1px solid #dfdfdf;
+}
+.sub_text {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 77px;
+  letter-spacing: 0.09em;
+  color: #acadac;
+}
+/*form end*/
+@media only screen and (max-width: 1463px) {
+  .header_title {
+    width: 80%;
+    font-size: 24px;
+  }
+  .header_nav {
+    justify-content: flex-start;
+  }
+  .header_nav_link {
+    margin-right: 10px;
+  }
+  .header_reg_bnt {
+    padding-left: 10px;
+  }
+  .wrapper_reg_btn {
+    width: 147px;
+    justify-content: flex-end;
+  }
+}
