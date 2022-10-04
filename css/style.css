@@ -73,58 +73,8 @@ button {
   color: #000;
   text-decoration: underline;
 }
-/*nav lng start*/
 
-.header_lng_btn {
-  position: relative;
-  display: flex;
-  color: #000;
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-}
-.header_lng_btn img {
-  position: absolute;
-  left: 90.67%;
-  top: 43.74%;
-}
-/* Контейнер <div> - необходим для размещения выпадающего содержимого */
-.header_lng {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-.box {
-  height: 100%;
-  width: 100%;
-}
-/* Выпадающее содержимое (скрыто по умолчанию) */
-.header_lng_content {
-  position: absolute;
-}
-/* Ссылки внутри выпадающего списка */
-.header_lng_content a {
-  color: black;
-  padding: 12px 10px;
-  text-decoration: none;
-  display: block;
-}
-/* Изменение цвета выпадающих ссылок при наведении курсора */
-.header_lng_content a:hover {
-  color: #4461f2;
-}
-
-/* Показать выпадающее меню при наведении курсора */
-
-/* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
-.box:hover .header_lng_btn {
-  color: #4461f2;
-}
 /*REG BTN START*/
-.header_reg_bnt {
-  padding-left: 38px;
-}
 .wrapper_reg_btn {
   display: flex;
   justify-content: space-between;
